@@ -10,6 +10,10 @@ fn main() {
     // /* Exercise tree: conditions */
     conditions_print();
 
+    //arrays and fors
+
+    arrays_and_fors();
+
 }
 
 fn print_vars() {
@@ -59,4 +63,18 @@ fn conditions_print() {
     } else {
         println!("{}, Eres menor de edad", frase);
     }
+}
+
+fn arrays_and_fors() {
+    //create array
+    let mut nombres = Vec::new();
+
+    //get user inputs and print
+    println!("Ingresa tu nombre");
+    let mut nombre = String::new();
+    io::stdin().read_line(&mut nombre).expect("Error");
+
+    //push user input to array
+    nombres.push(nombre);
+
 }
